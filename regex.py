@@ -108,3 +108,63 @@ def dolar_char_test():
         print ("dolar_char_test search unsuccessful.")
 
 dolar_char_test()
+
+# * - star - to check zero or more occurance of the pattrn left to it.
+
+def star_char_test():
+    pattern1 = "mi*an"
+
+    result1 = re.match(pattern1, test_string)
+
+    if result1:
+        print ("dolar_char_test search succesful.")
+    else:
+        print ("dolar_char_test search unsuccessful.")
+
+star_char_test()
+
+# + - plus - to check one or more occurance of the pattern left to it.
+
+def plus_char_test():
+    pattern1 = "mi+an"
+
+    result1 = re.match(pattern1, test_string)
+
+    if result1:
+        print ("dolar_char_test search succesful.")
+    else:
+        print ("dolar_char_test search unsuccessful.")
+
+plus_char_test()
+
+# ? - question mark - to check zero or one occurance of the pattern left to it.
+
+def question_mark_char_test():
+
+    pattern1 = "mi?an"
+
+    result1 = re.match(pattern1, test_string)
+
+    if result1:
+        print ("dolar_char_test search succesful.")
+    else:
+        print ("dolar_char_test search unsuccessful.")
+
+question_mark_char_test()
+
+# {n,m} - braces - to check the char at least n and at most m repeitations of the pattern left to it.
+
+def braces_char_test():
+
+    pattern1 = "a{2,5}"
+    pattern2 = "[0-9]{3,7}"
+
+    result1 = re.match(pattern1, test_string)
+    result2 = re.match(pattern2, test_string)
+
+    if result1 or result2:
+        print ("braces_char_test search succesful.")
+    else:
+        print ("braces_char_test search unsuccessful.")
+
+braces_char_test()
