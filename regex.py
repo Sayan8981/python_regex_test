@@ -10,9 +10,9 @@ def first_five_chars_test():
     result = re.match(pattern, test_string)
 
     if result:
-        print ("search succesful.")
+        print ("first_five_chars_test search succesful.")
     else:
-        print ("search unsuccessful.")
+        print ("first_five_chars_test search unsuccessful.")
 
 first_five_chars_test()
 
@@ -26,9 +26,9 @@ def set_chars_test():
     result = re.match(pattern, test_string)
 
     if result:
-        print ("search succesful.")
+        print ("set_chars_test search succesful.")
     else:
-        print ("search unsuccessful.")
+        print ("set_chars_test search unsuccessful.")
 
 set_chars_test()
 
@@ -45,9 +45,9 @@ def range_chars_test():
     result3 = re.match(pattern3, test_string)
 
     if result1 or result2 or result3:
-        print ("search succesful.")
+        print ("range_chars_test search succesful.")
     else:
-        print ("search unsuccessful.")
+        print ("range_chars_test search unsuccessful.")
 
 range_chars_test()
 
@@ -61,9 +61,9 @@ def complement_chars_test():
     result2 = re.match(pattern2, test_string)
 
     if result1 or result2:
-        print ("search succesful.")
+        print ("complement_chars_test search succesful.")
     else:
-        print ("search unsuccessful.")
+        print ("complement_chars_test search unsuccessful.")
 
 complement_chars_test()
 
@@ -75,22 +75,36 @@ def period_chars_test():
     result1 = re.match(pattern1, test_string)
 
     if result1:
-        print ("search succesful.")
+        print ("period_chars_test search succesful.")
     else:
-        print ("search unsuccessful.")
+        print ("period_chars_test search unsuccessful.")
 
 period_chars_test()
 
 # ^ - caret - starts with certain chars which is mentioned 
 
-def func6():
+def caret_char_test():
     pattern1 = "^a"
 
     result1 = re.match(pattern1, test_string)
 
     if result1:
-        print ("search succesful.")
+        print ("caret_char_test search succesful.")
     else:
-        print ("search unsuccessful.")
+        print ("caret_char_test search unsuccessful.")
 
-func6()
+caret_char_test()
+
+# $ - dollar - to check if any string ends with certain chars
+
+def dolar_char_test():
+    pattern1 = "...a$"
+
+    result1 = re.match(pattern1, test_string)
+
+    if result1:
+        print ("dolar_char_test search succesful.")
+    else:
+        print ("dolar_char_test search unsuccessful.")
+
+dolar_char_test()
