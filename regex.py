@@ -146,9 +146,9 @@ def question_mark_char_test():
     result1 = re.match(pattern1, test_string)
 
     if result1:
-        print ("dolar_char_test search succesful.")
+        print ("question_mark_test search succesful.")
     else:
-        print ("dolar_char_test search unsuccessful.")
+        print ("question_mark_test search unsuccessful.")
 
 question_mark_char_test()
 
@@ -168,3 +168,33 @@ def braces_char_test():
         print ("braces_char_test search unsuccessful.")
 
 braces_char_test()
+
+# | -  alternation - to check if there any specified char present in the string.
+
+def alternation_char_test():
+
+    pattern1 = "a|d"
+
+    result1 = re.match(pattern1, test_string)
+
+    if result1:
+        print ("alternation_char_test search succesful.")
+    else:
+        print ("alternation_char_test search unsuccessful.")
+
+alternation_char_test()
+
+# () -  group - to check if any chars present in the string followed by some string.
+
+def group_char_test():
+
+    pattern1 = "(a|d)cv"
+
+    result1 = re.match(pattern1, test_string)
+
+    if result1:
+        print ("group_char_test search succesful.")
+    else:
+        print ("group_char_test search unsuccessful.")
+
+group_char_test()
