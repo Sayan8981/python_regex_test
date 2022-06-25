@@ -198,3 +198,18 @@ def group_char_test():
         print ("group_char_test search unsuccessful.")
 
 group_char_test()
+
+# \ - backslash - match that string following by string 
+
+def backslash_char_test():
+
+    pattern1 = "\$a[0-9]"
+
+    result1 = re.match(pattern1, test_string)
+
+    if result1:
+        print ("backslash_char_test search succesful.")
+    else:
+        print ("backslash_char_test search unsuccessful.")
+
+backslash_char_test()
